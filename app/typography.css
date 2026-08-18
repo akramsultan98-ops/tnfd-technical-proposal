@@ -1,0 +1,60 @@
+/* Proposal typography and proportion pass — no asset changes. */
+
+@media (min-width: 1280px) {
+  aside.fixed {
+    width: 252px !important;
+  }
+
+  aside .font-display.text-\[22px\] {
+    font-size: 26px !important;
+    line-height: .98 !important;
+  }
+
+  aside > div:first-child > div:first-child {
+    font-size: 10px !important;
+    letter-spacing: .22em !important;
+  }
+
+  aside nav button span:first-of-type {
+    font-size: 11px !important;
+  }
+
+  aside nav button span:last-child {
+    font-size: 11.5px !important;
+    letter-spacing: .12em !important;
+  }
+
+  aside > div:last-child {
+    font-size: 10px !important;
+    line-height: 1.8 !important;
+  }
+}
+
+/* Improve reading scale consistently without changing the visual language. */
+main section p {
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+main section .text-\[9px\] {
+  font-size: 10px !important;
+}
+
+main section .text-xs {
+  font-size: 13px !important;
+}
+
+main section .eyebrow {
+  font-size: 10px !important;
+  letter-spacing: .22em !important;
+}
+
+footer p {
+  font-size: 12px !important;
+}
+
+@media (max-width: 1279px) {
+  main section p {
+    font-size: 14px;
+  }
+}
