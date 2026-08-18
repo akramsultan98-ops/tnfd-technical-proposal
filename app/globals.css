@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --rail: 232px;
+    --rail: 252px;
     --accent: #5fa8b5;
   }
   html {
@@ -84,6 +84,62 @@
 @layer utilities {
   .text-balance { text-wrap: balance; }
   .text-pretty { text-wrap: pretty; }
+}
+
+/* Final visual tuning: slightly larger brand mark, stronger reading scale,
+   and a wider sidebar/content relationship to match the Entilaq-style proposal feel. */
+@media (min-width: 1280px) {
+  aside.fixed {
+    width: 252px !important;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  main > div.fixed.left-6.top-6 img {
+    width: 118px !important;
+    max-width: 118px;
+    height: auto;
+  }
+
+  main section.xl\:pl-\[310px\],
+  main section.xl\:pl-\[310px\] {
+    padding-left: 330px !important;
+  }
+
+  aside .font-display.text-\[22px\] {
+    font-size: 24px !important;
+  }
+
+  aside nav button span:last-child {
+    font-size: 10.5px;
+    letter-spacing: .14em;
+  }
+
+  section h2 {
+    font-size: clamp(3rem, 5vw, 5.8rem);
+  }
+
+  section h3 {
+    line-height: .97;
+  }
+}
+
+@media (min-width: 1536px) {
+  main section.xl\:pl-\[310px\] {
+    padding-left: 360px !important;
+  }
+
+  main > div.fixed.left-6.top-6 img {
+    width: 124px !important;
+    max-width: 124px;
+  }
+}
+
+@media (max-width: 1279px) {
+  main > div.fixed.left-6.top-6 img {
+    width: 108px !important;
+    max-width: 108px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
